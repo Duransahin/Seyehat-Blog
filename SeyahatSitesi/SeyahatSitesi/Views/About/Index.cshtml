@@ -1,0 +1,21 @@
+﻿@using SeyahatSitesi.Models.Sınıflar
+@model List<Hakkımızda>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_TestLayout1.cshtml";
+}
+<div class="content">
+    <div class="wrap">
+        <div class="about">
+            <h3>Hakkımızda</h3>
+            @foreach (var x in Model)
+            {
+                <img src="@x.ResimUrl" alt="" />
+
+                <p>@x.Aciklama</p>
+            }
+            <p>loremdlkmsfffvvsmv skmsfprl pö</p>
+        </div>
+    </div>
+    </div>
+
